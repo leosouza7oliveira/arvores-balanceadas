@@ -1,0 +1,267 @@
+==============================================
+  Sistema de Encomendas - Black Friday
+  Prototipo com arvores AVL e Rubro-Negra
+==============================================
+
+Escolha a estrutura de dados:
+  1 - Arvore AVL
+  2 - Arvore Rubro-Negra
+  0 - Sair
+> 1
+
+------ Arvore AVL (0 elementos, altura 0) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 1
+ID da encomenda: 10
+  Encomenda 10 registrada.
+  Rotacoes nesta operacao: 0
+
+------ Arvore AVL (1 elementos, altura 1) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 1
+ID da encomenda: 20
+  Encomenda 20 registrada.
+  Rotacoes nesta operacao: 0
+
+------ Arvore AVL (2 elementos, altura 2) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 1
+ID da encomenda: 30
+  Encomenda 30 registrada.
+  Rotacoes nesta operacao: 1
+
+------ Arvore AVL (3 elementos, altura 2) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 5
+20 (fb=0)
+|-- E: 10 (fb=0)
+`-- D: 30 (fb=0)
+
+------ Arvore AVL (3 elementos, altura 2) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 6
+IDs separados por espaco ou virgula: 40 50 25
+  Inseridos: 3 | Repetidos ignorados: 0 | Invalidos: 0
+  Rotacoes nesta operacao: 3 (1 dupla(s))
+
+------ Arvore AVL (6 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 5
+30 (fb=0)
+|-- E: 20 (fb=0)
+|   |-- E: 10 (fb=0)
+|   `-- D: 25 (fb=0)
+`-- D: 40 (fb=-1)
+    |-- E: nulo
+    `-- D: 50 (fb=0)
+
+------ Arvore AVL (6 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 3
+ID para buscar: 25
+  Encomenda 25 encontrada (3 comparacoes).
+
+------ Arvore AVL (6 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 3
+ID para buscar: 99
+  Encomenda 99 NAO encontrada (3 comparacoes).
+
+------ Arvore AVL (6 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 1
+ID da encomenda: 20
+  A encomenda 20 ja estava registrada. Nada foi alterado.
+
+------ Arvore AVL (6 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 2
+ID para remover: 20
+  Encomenda 20 removida.
+  Rotacoes nesta operacao: 0
+
+------ Arvore AVL (5 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 2
+ID para remover: 99
+  Encomenda 99 nao encontrada. Nada foi removido.
+
+------ Arvore AVL (5 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 5
+30 (fb=0)
+|-- E: 25 (fb=1)
+|   |-- E: 10 (fb=0)
+|   `-- D: nulo
+`-- D: 40 (fb=-1)
+    |-- E: nulo
+    `-- D: 50 (fb=0)
+
+------ Arvore AVL (5 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 4
+  10 25 30 40 50
+
+------ Arvore AVL (5 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 7
+  Estrutura ........: AVL
+  Elementos ........: 5
+  Altura ...........: 3
+  Rotacoes (total) .: 4
+  Rotacoes duplas ..: 1
+  Comparacoes em buscas: 6
+
+------ Arvore AVL (5 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 8
+  OK: todas as propriedades da arvore AVL estao validas.
+
+------ Arvore AVL (5 elementos, altura 3) ------
+  1 - Inserir encomenda (ID)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar IDs em ordem crescente
+  5 - Mostrar estrutura da arvore
+  6 - Inserir varios IDs de uma vez
+  7 - Estatisticas (altura, rotacoes...)
+  8 - Verificar propriedades da arvore
+  9 - Trocar tipo de arvore
+  0 - Sair
+> 0
+Encerrando.

@@ -1,0 +1,139 @@
+
+==================== AVL ====================
+
+> Arvore vazia
+  [OK]    comeca vazia, com altura 0
+  [OK]    buscar em arvore vazia retorna nao encontrado
+  [OK]    remover de arvore vazia retorna false
+  [OK]    percurso em ordem vazio
+  [OK]    arvore vazia e valida
+
+> Arvore com um elemento
+  [OK]    inserir 42
+  [OK]    42 virou a raiz e altura = 1
+  [OK]    busca 42 (existe) e 7 (nao existe)
+  [OK]    propriedades validas com 1 elemento
+  [OK]    remover 7 (inexistente) nao muda nada
+  [OK]    continua com 1 elemento
+  [OK]    remover 42 deixa a arvore vazia
+  [OK]    arvore vazia de novo e valida
+
+> Valores repetidos
+  [OK]    inserir 10 de novo e recusado
+  [OK]    inserir 20 de novo e recusado
+  [OK]    a arvore continua com {10, 20}
+  [OK]    propriedades validas
+
+> Casos basicos de rotacao (3 elementos)
+  [OK]    crescente (RR): raiz 20, altura 2, 1 rotacao(oes)
+  [OK]    decrescente (LL): raiz 20, altura 2, 1 rotacao(oes)
+  [OK]    zigue-zague (RL): raiz 20, altura 2, 2 rotacao(oes)
+  [OK]    zigue-zague (LR): raiz 20, altura 2, 2 rotacao(oes)
+
+> Insercao em ordem crescente (1000 elementos)
+  [OK]    todas as insercoes mantiveram as propriedades
+  [OK]    percurso em ordem sai crescente e completo
+          altura final = 10, rotacoes = 990
+
+> Insercao em ordem decrescente (1000 elementos)
+  [OK]    todas as insercoes mantiveram as propriedades
+  [OK]    percurso em ordem sai crescente e completo
+          altura final = 10, rotacoes = 990
+
+> Insercao em ordem aleatoria (1000 elementos)
+  [OK]    todas as insercoes mantiveram as propriedades
+  [OK]    percurso em ordem sai crescente e completo
+          altura final = 12, rotacoes = 662
+
+> Busca de elementos existentes e inexistentes
+  [OK]    os 100 IDs inseridos sao encontrados
+  [OK]    IDs que nao existem (menores, maiores e no meio) nao sao encontrados
+
+> Remocao com diferentes configuracoes de filhos
+  [OK]    remover folha (removido 5)
+  [OK]    remover no com 1 filho (removido 10)
+  [OK]    remover no com 2 filhos (removido 30)
+  [OK]    remover a raiz (50)
+
+> Remocao de elementos inexistentes
+  [OK]    remover 1234 e -1 retorna false
+  [OK]    arvore ficou igual
+
+> Remover tudo ate esvaziar (ordem aleatoria)
+  [OK]    removeu todos e a arvore ficou vazia e valida
+
+> Estresse: 20000 operacoes aleatorias comparadas com std::set
+  [OK]    todas as respostas iguais as do std::set
+  [OK]    propriedades validas durante e no fim
+  [OK]    conteudo final igual ao do std::set (1535 elementos)
+
+==================== Rubro-Negra ====================
+
+> Arvore vazia
+  [OK]    comeca vazia, com altura 0
+  [OK]    buscar em arvore vazia retorna nao encontrado
+  [OK]    remover de arvore vazia retorna false
+  [OK]    percurso em ordem vazio
+  [OK]    arvore vazia e valida
+
+> Arvore com um elemento
+  [OK]    inserir 42
+  [OK]    42 virou a raiz e altura = 1
+  [OK]    busca 42 (existe) e 7 (nao existe)
+  [OK]    propriedades validas com 1 elemento
+  [OK]    remover 7 (inexistente) nao muda nada
+  [OK]    continua com 1 elemento
+  [OK]    remover 42 deixa a arvore vazia
+  [OK]    arvore vazia de novo e valida
+
+> Valores repetidos
+  [OK]    inserir 10 de novo e recusado
+  [OK]    inserir 20 de novo e recusado
+  [OK]    a arvore continua com {10, 20}
+  [OK]    propriedades validas
+
+> Casos basicos de rotacao (3 elementos)
+  [OK]    crescente (RR): raiz 20, altura 2, 1 rotacao(oes)
+  [OK]    decrescente (LL): raiz 20, altura 2, 1 rotacao(oes)
+  [OK]    zigue-zague (RL): raiz 20, altura 2, 2 rotacao(oes)
+  [OK]    zigue-zague (LR): raiz 20, altura 2, 2 rotacao(oes)
+
+> Insercao em ordem crescente (1000 elementos)
+  [OK]    todas as insercoes mantiveram as propriedades
+  [OK]    percurso em ordem sai crescente e completo
+          altura final = 17, rotacoes = 983
+
+> Insercao em ordem decrescente (1000 elementos)
+  [OK]    todas as insercoes mantiveram as propriedades
+  [OK]    percurso em ordem sai crescente e completo
+          altura final = 17, rotacoes = 983
+
+> Insercao em ordem aleatoria (1000 elementos)
+  [OK]    todas as insercoes mantiveram as propriedades
+  [OK]    percurso em ordem sai crescente e completo
+          altura final = 12, rotacoes = 564
+
+> Busca de elementos existentes e inexistentes
+  [OK]    os 100 IDs inseridos sao encontrados
+  [OK]    IDs que nao existem (menores, maiores e no meio) nao sao encontrados
+
+> Remocao com diferentes configuracoes de filhos
+  [OK]    remover folha (removido 5)
+  [OK]    remover no com 1 filho (removido 10)
+  [OK]    remover no com 2 filhos (removido 30)
+  [OK]    remover a raiz (50)
+
+> Remocao de elementos inexistentes
+  [OK]    remover 1234 e -1 retorna false
+  [OK]    arvore ficou igual
+
+> Remover tudo ate esvaziar (ordem aleatoria)
+  [OK]    removeu todos e a arvore ficou vazia e valida
+
+> Estresse: 20000 operacoes aleatorias comparadas com std::set
+  [OK]    todas as respostas iguais as do std::set
+  [OK]    propriedades validas durante e no fim
+  [OK]    conteudo final igual ao do std::set (1535 elementos)
+
+==============================================
+Resultado: 78 de 78 testes passaram
